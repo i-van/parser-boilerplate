@@ -4,6 +4,7 @@ let fs = require('fs');
 
 require('dotenv').load();
 
+// used only async/await feature
 require('babel-register')({
   plugins: ['transform-async-to-generator'],
 
