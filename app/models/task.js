@@ -28,12 +28,6 @@ schema.statics.STATUS_IN_PROCESS = STATUS_IN_PROCESS;
 schema.statics.STATUS_FINISHED   = STATUS_FINISHED;
 
 /**
- * Indexes
- */
-schema.index({ status: 1, runAt: 1, priority: -1 });
-schema.index({ status: 1, started: 1 });
-
-/**
  * @returns {Promise}
  */
 schema.statics.pop = function() {
